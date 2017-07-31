@@ -1,0 +1,420 @@
+//---------------------
+/*PATRON DE COLORES - VARIABLES*/
+//---------------------
+$texto:#111111;
+$principal:#12AFAF;
+$secundario:#009500;
+
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: $texto;
+}
+.bienvenidos{
+    background: url("../img/Background-1.jpg") no-repeat center top;
+    color: #fff;
+    background-size: cover; //que se adapte al contenedor
+    height: 115vh; // que tome toda la altura del contenedor
+    font-weight: bold; //equivalente a strong para negrita
+    display: flex;
+    flex-direction: column;
+}
+.encabezado{
+background: $texto;
+color: #fff;
+padding: .5rem 0;
+}
+/*Quitar estilo de link en nombre de la barra*/
+.NoEstilo
+{
+text-decoration:none;
+color:#fff;
+font-size: 20px;
+list-style: none; 
+
+}
+.encabezado .container
+{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+.encabezado .logo img{
+    width: 40px;
+    height: auto;
+}
+/*ESTILOS PARA EL BOTON: BUSCAR Y MENU*/
+.boton-buscar, .boton-menu{
+border: 0;
+font-size: 2rem;
+margin: 0;
+padding: 0 .5rem; //pading entre botones
+background: transparent; //color de fondo botones
+color: #fff;
+}
+/*Cuando el botón está enfocada se quita el efecto*/
+.boton-buscar:focus,
+.boton-menu:focus{
+outline: 0;
+}
+/*alinear los botones a la derecha*/
+.boton-buscar{
+margin-left: auto;
+margin-right: .8rem;
+}
+/*Estilos bloque buscar */
+
+#bloque-buscar{
+flex: 1 1 100%;
+}
+.contenedor-bloque-buscar{
+display: flex;
+height: 3rem;
+margin: 1rem 0;
+}
+/*selector de atributo*/
+.contenedor-bloque-buscar input[type="text"]{
+border: 0; //el borde es redondeado
+border-radius: 5px 0 0 5px;
+padding: 1rem; //pading interno
+flex: 1 1 auto;
+}
+
+.contenedor-bloque-buscar input[type="Submit"]{
+flex: 1 1 auto;
+border:0;
+border-radius:0 5px 5px 0;
+background: $principal;
+color:#fff;
+flex: 0 1 auto;
+padding: 0 1rem;
+}
+/*estilos menu para movil*/
+#menu-principal{
+flex: 1 1 100%;
+}
+#menu-principal ul{
+padding: 0;
+list-style: none; // quitar los puntos a una lista
+margin: 1rem 0 0 0;
+}
+#menu-principal ul a{
+display: block;
+padding: .8rem 0;
+text-align: center;
+color: #fff;
+text-transform: uppercase; //todo en mayusca
+border-top: 1px solid #8c8888;
+text-decoration: none; //quitamos el subrayado
+}
+//el estado hover al dar clic en el menu cambiar de color
+#menu-principal ul a:hover{
+color: $principal;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a{
+color: $principal;
+}
+.texto-encabezado{
+flex: 1 1 auto;
+display: flex;
+align-items: center;
+}
+.texto-encabezado .display-4{
+   margin-top: 4rem; 
+}
+.btn-primary
+{
+  color: #fff;
+  background-color:$principal;
+  border-color: transparent; 
+  margin-top: 1rem;
+  transition: all .5s ease;
+}
+.btn-primary:hover
+{
+  color: #fff;
+  background-color:$secundario;
+  border-color: transparent; 
+}
+.alinear-texto-encabezado-centro
+{
+text-align: center;
+}
+
+.flecha-bajar a{
+display: inline-block;
+color:#fff;
+font-size: 4rem;
+animation: flecha-animada 2s ease-in-out infinite; //llamar a la animacion, tiempo, velocidad, tiempo
+}
+/*efecto de la flecha para abajo*/
+@keyframes flecha-animada{
+    from{
+        transform: translateY(0);
+    } 
+    50%{
+        transform: translateY(6px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+/* */
+.agencia{
+background: $principal;
+color: #fff;
+}
+
+/* cambiar la imagen de agencia */
+
+.agencia img{
+    width: 102%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*-------Tu mejor eleccion -------*/
+.color-span-1 {
+color: $principal;
+}
+
+.tu-mejor-eleccion ul,.tu-mejor-eleccion ul li{
+ list-style: none;
+}
+
+.tu-mejor-eleccion ul li .fa{
+ list-style: none;
+font-size: 2.8rem;
+background: $secundario;
+border-radius: 50%;
+width:5.0rem;
+height: 5.0rem;
+line-height: 5.0rem;
+color: white;
+}
+
+.tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+font-size: 1.2rem;
+font-weight: bold;
+margin-top: .8rem;
+}
+
+.tu-mejor-eleccion ul li{
+min-height: 10.5rem;
+}
+
+/*-------NUESTROS SERVICIOS -------*/
+
+.servicios{
+    background: url("../img/Background-2.jpg") no-repeat center center;
+    color: white;
+    background-size: cover;
+}
+.color-span-2 {
+color: white;
+}
+.servicios article{
+display: flex;
+align-items: center;
+margin: 1rem 0;
+}
+.servicios img{
+    flex: 0 0 60px;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+.servicios h3{
+    flex: 1 1 0px;
+    margin: 0;
+    font-size: 1.1rem;
+    flex: 1 1 auto;
+}
+.servicios h3 a{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.servicios h3 a::after{
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 2rem;
+    margin-left: 1rem;
+    opacity: .5;
+    position: relative; //su posicion no cambia
+    left: 0;
+    transition: all .5s ease;
+}
+
+.servicios h3 a:hover::after{
+left: -.5rem;
+opacity: 1;
+color: $principal;
+}
+
+/*-------SECCION PIE DE PAGINA -------*/
+
+.piedepagina{
+background:$texto;
+color: white;
+text-align: center;
+font-size: .9rem;
+}
+.piedepagina .redes-sociales 
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+.piedepagina .redes-sociales a{
+color: white;
+font-size: 2rem;
+margin: 0 .5rem;
+opacity: .7;
+transition:  all .5s ease;
+}
+.piedepagina .redes-sociales a:hover{
+opacity: 1;
+}
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color:$principal;
+    text-decoration: none;
+    z-index: 99999;
+    line-height: 0;
+    transition: all .5 ease;
+}
+.ir-arriba:hover, .ir-arriba:focus{
+    outline: 0;
+    text-decoration: none;
+    color: white;
+}
+/*----------------------------------------------------------
+EMPIEZAN LAS MEDIAS QUERIES
+-----------------------------------------------------------*/
+@media (min-width:768px){
+    #menu-principal{
+        height: auto !important;
+        display: block;
+        flex: 0 1 auto;
+        margin-left: auto;
+        order: 1;
+    }
+    #menu-principal ul{
+        display: flex;
+        margin: 0 0 0 0;
+    }
+    #menu-principal ul li  a{
+        padding: .8rem;
+        text-transform: capitalize;
+        margin:  0 .3rem;
+        border-top: 0px;
+        border-bottom: 4px solid transparent;
+        transition: all .5 ease;
+    }
+    #menu-principal ul li.active a,
+    #menu-principal ul li a:hover {
+    color: $principal;
+    border-bottom: 4px solid;
+    }
+    .boton-buscar{
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 2;
+    }
+    #bloque-buscar{
+        order: 3;
+        position: absolute;
+        width: 20rem;
+        right: 3rem;
+        top: 4rem;
+        transition: all .5 ease;
+    }
+
+    /* ------- Seccion Servicios ----*/
+    .servicios article{
+        margin: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .servicios img{
+        flex: 0 0 160px;
+        overflow: hidden;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        transition: all 1s ease;
+    }
+    .servicios article:hover img{
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
+    .servicios h3 a::after{
+        display: none;
+    }
+    .servicios h3 {
+        margin: 0 0 .5rem 0;
+        font-size: 1.5rem;
+        flex: 0 1 auto;
+        width: 100%;
+    }
+    .servicios h3 a{
+        display: block;
+        width: 100%;
+    }
+    .servicios p{
+        width: 100%;
+    }
+    .btn-info {
+        margin-top: auto;
+    }
+}
+
+
+@media (min-width:992px){
+
+    html{
+        font-size: 16px;
+    }
+    .tu-mejor-eleccion ul li {
+        display: flex;
+        min-height: 7rem;
+    }
+    .tu-mejor-eleccion ul li .fa{
+        text-align: center;
+        flex: 0 1 auto;
+        margin-right: 1rem;
+        transition: all 1s ease;
+    }
+    .tu-mejor-eleccion ul li:hover .fa{
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+        background: $principal;
+    }
+    .contenedor-eleccion{
+        flex: 1 0 0px;
+    }
+    .tu-mejor-eleccion u li .contenedor-eleccion h4{
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .tu-mejor-eleccion ul:first-child .fa{
+        order: 1;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+    .tu-mejor-eleccion u li p{
+        font-size: .85rem;
+    }
+
+}
