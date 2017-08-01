@@ -126,12 +126,17 @@ align-items: center;
 .texto-encabezado .display-4{
    margin-top: 4rem; 
 }
+
+.texto-encabezado .btn-primary{
+margin-top: 1rem;
+}
+
 .btn-primary
 {
   color: #fff;
   background-color:$principal;
   border-color: transparent; 
-  margin-top: 1rem;
+  
   transition: all .5s ease;
 }
 .btn-primary:hover
@@ -419,5 +424,33 @@ EMPIEZAN LAS MEDIAS QUERIES
 
 }
 /*------------------------
-Nosotros
+Estilos pagina nosotros
 ---------------------------*/
+.paginas-internas .bienvenidos{
+    height: 60vh;
+}
+.paginas-internas .ruta
+{
+    background: $principal;
+    color: white;
+}
+.paginas-internas .ruta a{
+    color: white;
+    text-decoration: none;
+}
+.paginas-internas .ruta a:hover{
+    text-decoration: underline;
+}
+.paginas-internas .card-header a{
+    color:$principal;
+    text-decoration: none;
+}
+.paginas-internas .card .card-header a{
+    transition: all .5s ease;
+}
+.paginas-internas .card .card-header a:hover{
+    text-decoration: underline;
+
+}
+/* ---------------------------------
+Fundadores y Colaboradores --------*/
