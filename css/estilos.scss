@@ -383,8 +383,19 @@ EMPIEZAN LAS MEDIAS QUERIES
     .btn-info {
         margin-top: auto;
     }
-}
+    
+    .paginas-internas .lista-servicios .col-md-4{
+        display: flex;
+    }
+    .paginas-internas .lista-servicios .item-servicios{
+        display: flex;
+        flex-direction: column;
+    }
+    .paginas-internas .lista-servicios .item-servicios .btn-primary{
+        margin-top: auto;
+    }
 
+}
 
 @media (min-width:992px){
 
@@ -421,7 +432,7 @@ EMPIEZAN LAS MEDIAS QUERIES
     .tu-mejor-eleccion u li p{
         font-size: .85rem;
     }
-
+   
 }
 /*------------------------
 Estilos pagina nosotros
@@ -456,4 +467,60 @@ Estilos pagina nosotros
 Fundadores y Colaboradores --------*/
 .pd-top{
     padding-top: .5rem;
+}
+
+/*-------------------------------------
+ESTILO PAGINAS SERVICIOS
+--------------------------------------*/
+.paginas-internas .lista-servicios{
+    background: $principal;
+
+}
+.paginas-internas .lista-servicios h2{
+    color: white;
+}
+.paginas-internas .lista-servicios .item-servicios{
+    background: white;
+    text-align: center;
+    border: 5px solid gray;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.paginas-internas .lista-servicios .item-servicios img{
+    height: 125px;
+    width: 125px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    margin-bottom: 1rem;
+    transition: all 2s ease;
+}
+.paginas-internas .lista-servicios .item-servicios:hover img{
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+}
+/*---------------------------------------------
+MEDIA QUERIES PARA IMG EQUIPO METHRIKS Y COLABORADORES
+-----------------------------------------------*/
+@media (min-width:1200px){
+     .paginas-internas .lista-servicios .item-servicios img{
+        margin-left: 6rem;
+    }
+}
+@media (min-width: 1100px) and (max-width: 1199px){
+     .paginas-internas .lista-servicios .item-servicios img{
+        margin-left: 4rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1099px){
+     .paginas-internas .lista-servicios .item-servicios img{
+        margin-left: 4rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+     .paginas-internas .lista-servicios .item-servicios img{
+        margin-left: 2rem;
+    }
 }

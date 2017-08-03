@@ -16,7 +16,11 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- Tipos de letras -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
-
+<!-- Ventanas modales -->
+<link rel="stylesheet" href="css/modaal.css">
+<script src="js/modaal.js"></script>
+<script src="js/Scripts-JS.js"></script>
+<!-- ********************************** -->
 </head>
 <body> 
 <section class="bienvenidos">
@@ -42,8 +46,7 @@
 <ul>
 <li class="active"> <a href="index.html">Inicio</a></li>
 <li> <a href="nosotros.html">Nosotros</a></li>
-<li> <a href="servicios.html">Servicios</a></li>
-<li> <a href="proyectos.html">Historial</a></li>
+<li> <a href="proyectos.html">Proyectos</a></li>
 <li> <a href="contacto.html">Contactos</a></li>
 </ul>
 </nav>
@@ -161,21 +164,21 @@ quos vel, sapiente porro sint accusantium iste suscipit nihil maxime consequuntu
     <h3><a href="#">Desarrollo de software a la medida </a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a> 
+    <a href="#desarrollo" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a> 
     </article>
     <article class="col-md-4 col-lg-4">
     <img src="img/Startup.svg" alt="Soluciones tecnológicas para Startups">
     <h3><a href="#"> Soluciones tecnológicas para Startups</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#soluciones" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4">
     <img src="img/Conferencias.svg" alt="Conferencias para centros educativos">
     <h3><a href="#"> Conferencias para centros educativos</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#conferencias" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
 
     <article class="col-md-4 col-lg-4">
@@ -183,21 +186,21 @@ quos vel, sapiente porro sint accusantium iste suscipit nihil maxime consequuntu
     <h3><a href="#"> Talleres para centros educativos</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#talleres" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4">
     <img src="img/Profesionales.svg" alt="Asesorías tecnológicas profesionales">
     <h3><a href="#"> Asesorías tecnológicas profesionales</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#asesorias" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4">
     <img src="img/Servicios_I.svg" alt="Instalacion de redes para empresas">
     <h3><a href="#"> Instalacion de redes para empresas</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#instalacion" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
 
     <article class="col-md-4 col-lg-4">
@@ -205,26 +208,81 @@ quos vel, sapiente porro sint accusantium iste suscipit nihil maxime consequuntu
     <h3><a href="#"> Implementación de hardware</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#implementacion" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4">
     <img src="img/App_Plataforma.svg" alt="Desarrollo de Apps">
     <h3><a href="#"> Desarrollo de aplicaciones móviles</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#aplicaciones" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4">
     <img src="img/Responsive.svg" alt="Methriks ERP">
     <h3><a href="#"> Methriks ERP para MIPYMES</a></h3>
     <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
      voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
-    <a href="#" class="btn btn-info d-none d-md-flex">Más información</a>
+    <a href="#erp" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
 
 </div>
 </div>
 </main>
+
+
+<!--******************** Modales para equipo y colaboradores*********************-->
+<!--******************** Modal para desarrollo *********************-->
+<div id="desarrollo" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para desarrollo *********************-->
+<!--******************** Modal para soluciones *********************-->
+<div id="soluciones" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para soluciones *********************-->
+<!--******************** Modal para conferencias *********************-->
+<div id="conferencias" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para conferencias *********************-->
+<!--******************** Modal para talleres *********************-->
+<div id="talleres" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para talleres *********************-->
+<!--******************** Modal para asesorias *********************-->
+<div id="asesorias" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para asesorias *********************-->
+<!--******************** Modal para Instalacion *********************-->
+<div id="instalacion" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para instalacion *********************-->
+<!--******************** Modal para conferencias *********************-->
+<div id="conferencias" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para conferencias *********************-->
+<!--******************** Modal para talleres *********************-->
+<div id="implementacion" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para talleres *********************-->
+<!--******************** Modal para asesorias *********************-->
+<div id="aplicaciones" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para asesorias *********************-->
+<!--******************** Modal para Instalacion *********************-->
+<div id="erp" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para instalacion *********************-->
+<!--******************** Cierre para Modales para equio *********************-->
+
 
 <footer class="piedepagina py-2" role="contentinfo" >
 <div class="container"> 

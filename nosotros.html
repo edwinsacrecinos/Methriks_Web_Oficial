@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Nosotros</title>
-    <!-- Bootstrap CSS -->
+
+<!-- Bootstrap 4 CSS -->
 <link rel="stylesheet" href="css/bootstrap-dev-4.css">
 <link rel="stylesheet" href="css/estilos.css">
 <!-- Icons Awesome CSS --> 
@@ -16,7 +17,11 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- Tipos de letras -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
-
+<!-- Ventanas modales -->
+<link rel="stylesheet" href="css/modaal.css">
+<script src="js/modaal.js"></script>
+<script src="js/Scripts-JS.js"></script>
+<!-- ********************************** -->
 </head>
 <body class="paginas-internas"> 
 <section class="bienvenidos">
@@ -42,8 +47,7 @@
 <ul>
 <li> <a href="index.html">Inicio</a></li>
 <li class="active"> <a href="nosotros.html">Nosotros</a></li>
-<li> <a href="servicios.html">Servicios</a></li>
-<li> <a href="proyectos.html">Historial</a></li>
+<li> <a href="proyectos.html">Proyectos</a></li>
 <li> <a href="contacto.html">Contactos</a></li>
 </ul>
 </nav>
@@ -145,26 +149,43 @@
 </div>
 </main>
 
-<section class="equipo">
-<div class="container">
-<h2 class="font-weight-bold">Fundadores <i class="fa fa-briefcase" aria-hidden="true"></i></h2>
+<section class="lista-servicios">
+<div class="container p-1">
+<h2 class="font-weight-bold">Equipo Methriks y colaboradores <i class="fa fa-briefcase" aria-hidden="true"></i></h2>
 <div class="row">
+ <!--*********************** primer fila ************ -->
+      <div class="col-md-4">
+        <article class="item-servicios"> <!-- cambiar imagen por iconos ahi me quede 2do video -->
+          <img src="img/Edwin.jpg" alt="Imagen">
+          <h4>Edwin Sac</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, temporibus officiis! </p>
+          <a href="#edwin" data-modaal-type="inline" data-modaal-animation="fade"  class="btn btn-primary modaal inline" >Ver más</a>
+        </article>
+      </div>
 
+      <div class="col-md-4">
+        <article class="item-servicios">
+          <img src="img/Bryan.jpg" alt="Imagen">
+          <h4> Bryan Villacinda</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, temporibus officiis! </p>
+          <a href="#bryan" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-primary modaal inline">Ver más</a>
+        </article>
+      </div>
+
+      <div class="col-md-4">
+        <article class="item-servicios">
+          <img src="img/GarroboStudio.png" alt="Imagen">
+          <h4> Garrobo Studio</h4>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, temporibus officiis! me voy de ti para siempre lfljfljasljflajslfjlasfjlasjfljsaljf
+            lfjlasjfljsalfjlas
+          </p>
+          <a href="#garrobo" data-modaal-type="inline" data-modaal-animation="fade"  class="btn btn-primary modaal inline">Ver más</a>
+        </article>
+      </div>
+      <!--***********************Cierre primer fila ************ -->
 </div>
 </div>
 </section>
-
-
-<section class="colaboradores">
-<div class="container">
-<h2 class="font-weight-bold">Colaboradores <i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
-<div class="row">
-
-</div>
-</div>
-</section>
-
-
 
 <footer class="piedepagina py-2" role="contentinfo" >
 <div class="container"> 
@@ -176,5 +197,24 @@
 </div>
 </footer>
 <a class="ir-arriba" href="#"><i class="fa fa-hand-o-up" aria-hidden="true"></i> </a>
+
+
+<!--******************** Modales para equipo y colaboradores*********************-->
+<!--******************** Modal para Edwin *********************-->
+<div id="edwin" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para Edwin *********************-->
+<!--******************** Modal para Bryan *********************-->
+<div id="bryan" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para Bryan *********************-->
+<!--******************** Modal para Garrobo *********************-->
+<div id="garrobo" style="display:none;">
+	<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+</div>
+<!--******************** Cierre Modal para Garrobo *********************-->
+<!--******************** Cierre para Modales para equio *********************-->
 </body>
 </html>
