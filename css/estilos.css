@@ -466,5 +466,36 @@ MEDIA QUERIES PARA IMG EQUIPO METHRIKS Y COLABORADORES
 @media (min-width: 768px) and (max-width: 991px) {
   .paginas-internas .lista-servicios .item-servicios img {
     margin-left: 2rem; } }
+/* ---------------------------------
+SECCION DE ULTIMOS PROYECTOS
+------------------------------------ */
+.ultimos-proyectos a {
+  text-decoration: none; }
+
+.ultimos-proyectos a h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: black; }
+
+.ultimos-proyectos .container {
+  padding-left: 0;
+  padding-right: 0; }
+
+.ultimos-proyectos .owl-nav {
+  display: flex;
+  justify-content: center;
+  margin: .3rem 0; }
+
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+  font-size: 3rem;
+  margin: 0 .5rem;
+  color: #12AFAF;
+  transition: all .5s ease; }
+
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+  color: #009500; }
 
 /*# sourceMappingURL=estilos.css.map */
