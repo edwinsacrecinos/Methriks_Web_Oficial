@@ -16,7 +16,7 @@ body{
     background: url("../img/Background-1.jpg") no-repeat center top;
     color: #fff;
     background-size: cover; //que se adapte al contenedor
-    height: 115vh; // que tome toda la altura del contenedor
+    height: 90vh; // que tome toda la altura del contenedor
     font-weight: bold; //equivalente a strong para negrita
     display: flex;
     flex-direction: column;
@@ -394,7 +394,6 @@ EMPIEZAN LAS MEDIAS QUERIES
     .paginas-internas .lista-servicios .item-servicios .btn-primary{
         margin-top: auto;
     }
-
 }
 
 @media (min-width:992px){
@@ -556,3 +555,6 @@ SECCION DE ULTIMOS PROYECTOS
 .ultimos-proyectos .owl-next:hover {
     color: $secundario;
 }
+/* ------------------------------------
+ARREGLOS DE LA WEB
+--------------------------------------*/
