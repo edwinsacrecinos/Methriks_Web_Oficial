@@ -16,7 +16,8 @@ body{
     background: url("../img/Background-1.jpg") no-repeat center top;
     color: #fff;
     background-size: cover; //que se adapte al contenedor
-    height: 90vh; // que tome toda la altura del contenedor
+    background-attachment: fixed !important;//efecto parallax
+    height: 150vh; // que tome toda la altura del contenedor 90vh
     font-weight: bold; //equivalente a strong para negrita
     display: flex;
     flex-direction: column;
@@ -218,6 +219,8 @@ min-height: 10.5rem;
     background: url("../img/Background-2.jpg") no-repeat center center;
     color: white;
     background-size: cover;
+    background-attachment: fixed !important; //efecto parallax
+
 }
 .color-span-2 {
 color: white;
@@ -558,3 +561,27 @@ SECCION DE ULTIMOS PROYECTOS
 /* ------------------------------------
 ARREGLOS DE LA WEB
 --------------------------------------*/
+/*---------------------------------------------
+MEDIA QUERIES PARA IMG BACKGROUND  INDEX ALTURA
+-----------------------------------------------*/
+@media (min-height:320px) and (max-height:360px) {
+   .bienvenidos{
+    height: 160vh; // que tome toda la altura del contenedor 90vh
+    }
+}
+@media (min-height:361px) and (max-height:419px){
+    .bienvenidos{
+    height: 150vh; // que tome toda la altura del contenedor 90vh
+    }
+}
+@media (min-height:420px) and (max-height:489px){
+    .bienvenidos{
+    height: 120vh; // que tome toda la altura del contenedor 90vh
+    
+    }
+}
+@media (min-height:490px){
+    .bienvenidos{
+    height: 100vh; // que tome toda la altura del contenedor 90vh
+    }
+}
