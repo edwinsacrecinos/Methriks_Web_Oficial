@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Methriks</title>
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap-dev-4.css">
@@ -25,13 +26,15 @@
 <script src="js/Scripts-JS.js"></script>
 <!-- animate for web -->
 <script src="js/wow.min.js"></script>
+<!-- animate for scroll -->
+<script src="js/smooth-scroll.min.js"></script>
 <!-- sitio js personalizado -->
 <script src="js/sitio.js"></script>
 <!-- ********************************** -->
 </head>
 <body class="index-body"> 
 <section class="bienvenidos">
-<header class="encabezado navbar fixed-top" role="banner">
+<header class="encabezado navbar fixed-top" role="banner" id="encabezado" data-scroll>
 <div class="container">
 
 <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"><span class="NoEstilo"> METHRIKS </span> </a>
@@ -65,7 +68,7 @@
 <div class="container">
 <h1 class="display-4 wow bounceIn">Desarrollo de software y educación tecnológica</h1>
 <p class="wow fadeInDown" data-wow-delay=".3s"> Desarrollamos software e impartimos talleres y conferencias de tecnología según los requerimientos de nuestros clientes.</p>
-<a href="contacto" class="btn btn-primary btn-lg wow fadeInDown" data-wow-delay=".2s">Ponte en contacto</a>
+<a href="contacto.html" class="btn btn-primary btn-lg wow fadeInDown" data-wow-delay=".2s">Ponte en contacto</a>
 </div>
 </div>
 
@@ -74,7 +77,7 @@
 </div>
 </section>
 
-<section class="agencia py-2" id="agencia">
+<section class="agencia py-2" id="agencia" data-scroll>
 <div class="container">
 <h2 class="h3 text-center font-weight-bold wow fadeInDown" >Methriks Desarrollo Software, Servicios Ingenieriles & Educación Tecnológica</h2>
 
@@ -301,7 +304,7 @@ quos vel, sapiente porro sint accusantium iste suscipit nihil maxime consequuntu
 </div>
 </footer>
 
-<a class="ir-arriba" href="#"><i class="fa fa-hand-o-up" aria-hidden="true"></i> </a>
+<a class="ir-arriba" href="#encabezado" ><i class="fa fa-hand-o-up" aria-hidden="true"></i> </a>
 
 </body>
 </html>
