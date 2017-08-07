@@ -464,6 +464,8 @@ Estilos pagina nosotros
 }
 .paginas-internas .card .card-header a:hover{
     text-decoration: underline;
+    color: $principal;
+    cursor: pointer;
 
 }
 /* ---------------------------------
@@ -587,6 +589,3 @@ MEDIA QUERIES PARA IMG BACKGROUND  INDEX ALTURA
     }
 }
 
-/*---------------------------------------
-BUSCADOR 
-----------------------------------------*/

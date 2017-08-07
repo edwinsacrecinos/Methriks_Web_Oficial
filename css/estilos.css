@@ -565,7 +565,9 @@ Estilos pagina nosotros
           transition: all .5s ease; }
 
 .paginas-internas .card .card-header a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #12AFAF;
+  cursor: pointer; }
 
 /* ---------------------------------
 Fundadores y Colaboradores --------*/
@@ -678,8 +680,5 @@ MEDIA QUERIES PARA IMG BACKGROUND  INDEX ALTURA
 @media (min-height: 490px) {
   .bienvenidos {
     height: 100vh; } }
-/*---------------------------------------
-BUSCADOR 
-----------------------------------------*/
 
 /*# sourceMappingURL=estilos.css.map */
