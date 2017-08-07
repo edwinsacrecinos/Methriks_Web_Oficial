@@ -30,9 +30,11 @@
 <script src="js/smooth-scroll.min.js"></script>
 <!-- sitio js personalizado -->
 <script src="js/sitio.js"></script>
+<!-- Script search word -->
+
 <!-- ********************************** -->
 </head>
-<body class="index-body"> 
+<body class="index-body" id="content"> 
 <section class="bienvenidos">
 <header class="encabezado navbar fixed-top" role="banner" id="encabezado" data-scroll>
 <div class="container">
@@ -45,7 +47,7 @@
 <button class="boton-menu d-md-none" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
 <i class="fa fa-bars" aria-hidden="true"></i>
 </button>
-<form action="#" id="bloque-buscar" class="collapse">
+<form  id="bloque-buscar" class="collapse">
 <div class="contenedor-bloque-buscar">
 <input type="text" placeholder="Buscar...">
 <input type="Submit" value="Buscar">
@@ -83,7 +85,7 @@
 
 <div class="row">
 
-<div  class="col-12 col-md-8 col-xl-9 wow bounceIn" data-wow-delay=".3s" >
+<div  class="col-12 col-md-8 col-xl-9 wow bounceIn" data-wow-delay=".3s"  >
 <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quam quasi distinctio officia voluptate, 
 quos vel, sapiente porro sint accusantium iste suscipit nihil maxime consequuntur id, at veritatis ipsum ea. </p>
 <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quam quasi distinctio officia voluptate, 
@@ -170,68 +172,68 @@ quos vel, sapiente porro sint accusantium iste suscipit nihil maxime consequuntu
    <h2 class="text-center font-weight-bold color-span-2">Nuestros Servicios</h2>
 <div class="row">
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Desarrollo_Medida.svg" alt="Desarrollo de software a la medida">
-    <h3><a href="#desarrollo" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">Desarrollo de software a la medida </a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Desarrollo_Medida.svg" alt="Desarrollo de software a la medida" href="#desarrollo" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3> <a>Desarrollo de software a la medida</a></h3>
+    <p class="d-none d-md-flex">Sistemas a la medida multiplataforma para distintos tipos de empresas, utilizando lo último en tecnologías de desarrollo,
+    otorgándoles a nuestros clientes soluciones de calidad a sus problemas.</p> 
     <a href="#desarrollo" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a> 
     </article>
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Startup.svg" alt="Soluciones tecnológicas para Startups">
-    <h3><a href="#soluciones" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Soluciones tecnológicas para Startups</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Startup.svg" alt="Soluciones tecnológicas para Startups" href="#soluciones" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Soluciones tecnológicas para Startups</a></h3>
+    <p class="d-none d-md-flex"> Methriks codifica tus ideas y las convierte en el software o aplicación que tanto sueñas. Ofrecemos un equipo de ingenieros 
+    expertos para el desarrollo parcial o total del proyecto de tu Startup.</p> 
     <a href="#soluciones" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Conferencias.svg" alt="Conferencias para centros educativos">
-    <h3><a href="#conferencias" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Conferencias para centros educativos</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Conferencias.svg" alt="Conferencias para centros educativos" href="#conferencias" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Conferencias para centros educativos</a></h3>
+    <p class="d-none d-md-flex">Aprende y  prepárate para el futuro, infórmate y conoce más sobre las nuevas tecnologías con nuestras conferencias especializadas
+    y a la medida de lo que deseas aprender. Tus alumnos lo agradecerán.</p> 
     <a href="#conferencias" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
 
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Talleres.svg" alt="Talleres para centros educativos">
-    <h3><a href="#talleres" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Talleres para centros educativos</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Talleres.svg" alt="Talleres para centros educativos" href="#talleres" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Talleres para centros educativos</a></h3>
+    <p class="d-none d-md-flex">Aprende cómo usar las tecnologías del momento y donde aplicarlas con nuestros talleres interactivos  y a la medida, 
+    impartidos por profesionales altamente calificados.</p> 
     <a href="#talleres" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Profesionales.svg" alt="Asesorías tecnológicas profesionales">
-    <h3><a href="#asesorias" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Asesorías tecnológicas profesionales</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Profesionales.svg" alt="Asesorías tecnológicas profesionales" href="#asesorias" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Asesorías tecnológicas profesionales</a></h3>
+    <p class="d-none d-md-flex">Methriks ofrece asesorías realizadas por ingenieros expertos en las áreas de sistemas, informática y computación, 
+    abarcando múltiples temas de interés para empresas, centros educativos y emprendedores.</p> 
     <a href="#asesorias" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Servicios_I.svg" alt="Instalacion de redes para empresas">
-    <h3><a href="#instalacion" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Instalacion de redes para empresas</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Servicios_I.svg" alt="Instalacion de redes para empresas" href="#instalacion" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Instalacion de redes para empresas</a></h3>
+    <p class="d-none d-md-flex">Contamos con un equipo altamente calificado para brindarle los servicios de: Cableado estructurado | 
+    Redes inalambricas (wifi) | Instalación de redes seguras | mantenimiento de redes.</p> 
     <a href="#instalacion" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
 
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Hardware.svg" alt="Implementación de hardware">
-    <h3><a href="#implementacion" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Implementación de hardware</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Hardware.svg" alt="Implementación de hardware" href="#implementacion" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Implementación de hardware</a></h3>
+    <p class="d-none d-md-flex">Methriks ofrece el servicio de instalación y  matenimiento de hardware en laboratorios de computación, oficinas, 
+    negocios y centros educativos.</p> 
     <a href="#implementacion" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/App_Plataforma.svg" alt="Desarrollo de Apps">
-    <h3><a href="#aplicaciones" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Desarrollo de aplicaciones móviles</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/App_Plataforma.svg" alt="Desarrollo de Apps" href="#aplicaciones" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Desarrollo de aplicaciones móviles</a></h3>
+    <p class="d-none d-md-flex"> En la actualidad gran parte de los servicios en internet se consumen por medio de dispositivos móviles, por eso nosotros
+    desarrollamos esa aplicación que tanto deseas para tu negocio. Desarrollamos para las plataformas Android e iOS.</p> 
     <a href="#aplicaciones" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
     <article class="col-md-4 col-lg-4 wow rotateInUpLeft">
-    <img src="img/Responsive.svg" alt="Methriks ERP">
-    <h3><a href="#erp" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline"> Methriks ERP para MIPYMES</a></h3>
-    <p class="d-none d-md-flex"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae at libero fugiat
-     voluptas sit natus, culpa soluta nobis! Omnis quae explicabo eaque nesciunt, officiis pariatur</p> 
+    <img src="img/Responsive.svg" alt="Methriks ERP" href="#erp" data-modaal-type="inline" data-modaal-animation="fade" class="modaal inline">
+    <h3><a> Methriks ERP para MIPYMES</a></h3>
+    <p class="d-none d-md-flex">MethriksERP es nuestros software especializado para ayudar a los negocios a tener control de sus ventas, 
+    compras, cuentas, productos, inventario y más.</p> 
     <a href="#erp" data-modaal-type="inline" data-modaal-animation="fade" class="btn btn-info d-none d-md-flex modaal inline">Más información</a>
     </article>
 
